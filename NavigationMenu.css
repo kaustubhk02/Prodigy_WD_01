@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #5cb1ce;
+}
+#heading{
+    display: flex;
+    justify-content: center;
+}
+#box1{
+    padding: 0.2rem;
+    color: #033f2f;
+    margin: 0.25rem;
+    border: 0.2rem solid; 
+}
+#navbar{
+    font-size: larger;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items:center;
+    justify-content: space-around;
+    background-color: #073B4C;
+    color: aliceblue;
+    border: 0.25rem solid ;
+    position: sticky;
+    top: 0;
+}
+#mode{
+    background-color: #073B4C;
+    color: aliceblue;
+    border: 0ch;
+    font-family: 'Times';
+    font-size: large;
+}
+#navbar:hover{
+    border-color: #073B4C;
+}
+#box1:hover{
+    border-color: whitesmoke;
+}
+/* #box2:hover, #box3:hover, #box4:hover, #box5:hover, #box6:hover, #box7:hover, #mode:hover {
+    cursor: pointer;
+    padding: 0.7rem;
+    border: solid whitesmoke;
+} */

@@ -1,19 +1,3 @@
-// // Apply hover effect to select box
-// const mode = document.getElementById("mode");
-// if (mode) addHoverEffect(mode);
-
-// // Scroll event to change navbar color
-// window.addEventListener("scroll", () => {
-//     const navbar = document.getElementById("navbar");
-//     if (window.scrollY > 50) {
-//         navbar.style.backgroundColor = "#118AB2";
-//         navbar.style.color = "#fff";
-//     } else {
-//         navbar.style.backgroundColor = "#073B4C";
-//         navbar.style.color = "aliceblue";
-//     }
-// });
-
 let hoverEffect = (obj)=>{
     obj.addEventListener("mouseenter", ()=>{
         obj.style.cursor = "pointer";
@@ -34,3 +18,21 @@ for(let i=2; i<=7; i++){
 const mode = document.querySelector("#mode");
 hoverEffect(mode);
 
+const navbar = document.querySelector("#navbar");
+const body = document.querySelector("body");
+
+window.addEventListener("scroll", (event) => { 
+    if(window.scrollY > 20){
+        navbar.style.backgroundColor = "black";
+        mode.style.backgroundColor = "black";
+    }
+    else{
+        navbar.style.backgroundColor = "";
+        mode.style.backgroundColor = "";
+    }
+});
+
+// navbar.onscroll = ()=>{
+//     navbar.style.backgroundColor = "red";
+//     mode.style.backgroundColor = "red";
+// }

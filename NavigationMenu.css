@@ -17,6 +17,7 @@ body{
     border: 0.2rem solid; 
 }
 #navbar{
+    overflow: auto; /*adds scroll effect and fits more content in small box of div*/
     font-size: larger;
     display: flex;
     height: 50px;
